@@ -1,0 +1,20 @@
+[project]
+name = "hw1-api-clients"
+version = "0.1.0"
+description = "Threaded and async clients for the rate-limited orders API (HW1)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.27.0",
+    "ratelimit>=2.2.1",
+    "aiolimiter>=1.1.0",
+    "aiofiles>=24.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = []
