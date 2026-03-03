@@ -62,6 +62,12 @@ python client_threads.py
 python client_async.py
 ```
 
+### Generated output
+
+Sample CSV output from both clients is available in this folder:
+
+**[Generated data (items_threads.csv, items_async.csv)](https://drive.google.com/drive/folders/1kEpJFehFZ6Hi4keL9sgdPFwEB_Jnd2id?usp=sharing)**
+
 ## How the clients work
 
 - **Rate limiting:** Clients stay under the server’s 20 req/s limit by capping at 18 req/s (threaded: `ratelimit` decorator; async: `AsyncLimiter(18, 1)`).
